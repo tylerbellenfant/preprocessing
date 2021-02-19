@@ -91,10 +91,10 @@ def xml_to_csv(path):
                      int(member[5][3].text)
                      )
             xml_list.append(value)
-            print(int(member[5][0].text))
-            print(int(member[5][1].text))
-            print(int(member[5][2].text))
-            print(int(member[5][3].text))
+            #print(int(member[5][0].text))
+            #print(int(member[5][1].text))
+            #print(int(member[5][2].text))
+            #print(int(member[5][3].text))
     column_name = ['filename', 'width', 'height',
                    'class', 'xmin', 'xmax', 'ymin', 'ymax']
     xml_df = pd.DataFrame(xml_list, columns=column_name)
